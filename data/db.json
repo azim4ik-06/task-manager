@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$pqDYTuh3GbsE/LI7yR/faug6N9seE7ZFCpno5tOyF/gpDYZaNCUoa",
+      "id": 1
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Купить продукты",
+      "completed": false,
+      "date": "Thu Oct 03 2024 17:55:54 GMT+0500 (Uzbekistan Standard Time)",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "title": "Купить продукты",
+      "completed": false,
+      "date": "Thu Oct 03 2024 17:55:54 GMT+0500 (Uzbekistan Standard Time)",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "Сделать ДЗ",
+      "completed": false,
+      "date": "Thu Oct 03 2024 17:55:54 GMT+0500 (Uzbekistan Standard Time)",
+      "userId": 2,
+      "id": 3
+    }
+  ]
+}
