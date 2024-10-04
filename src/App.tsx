@@ -1,8 +1,19 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./components/Login";
+import Todo from "./components/Todo";
+import Header from "./components/Header";
+
 const App = () => {
   return (
-    <main>
-      <h1>Task Manager App</h1>
-    </main>
+    <Router>
+      <main>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/todo" element={<Todo />} />
+        </Routes>
+      </main>
+    </Router>
   );
 };
 

@@ -29,7 +29,7 @@ export default function Login() {
       const result = await response.json();
 
       if (result.accessToken) {
-        navigate("/todo-list");
+        navigate("/todo");
         toast.success("Вход выполнен успешно", { position: "bottom-right" });
       } else {
         toast.error("Неверный email или пароль", { position: "bottom-right" });
@@ -43,7 +43,7 @@ export default function Login() {
   return (
     <Box title="Login">
       <form
-        className="flex flex-col space-y-3"
+        className="flex flex-col space-y-4 my-2"
         onSubmit={handleSubmit(onSubmit)}
       >
         <label>
@@ -53,7 +53,7 @@ export default function Login() {
               validate: (value) => value.includes("@") || "Email is not valid",
             })}
             type="text"
-            className="rounded-lg p-2 shadow-md w-full"
+            className="rounded-lg p-2 shadow-md w-full focus:outline-indigo-200 bg-slate-50"
             placeholder="Email"
           />
           {errors.email && (
@@ -68,7 +68,7 @@ export default function Login() {
               minLength: { value: 8, message: "Минимум 8 символов" },
             })}
             type="password"
-            className="rounded-lg p-2 shadow-md w-full"
+            className="rounded-lg p-2 shadow-md w-full focus:outline-indigo-200 bg-slate-50"
             placeholder="Password"
           />
           {errors.password && (
