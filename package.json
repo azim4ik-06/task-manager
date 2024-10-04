@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "json-server-auth --watch data/db.json -r data/routes.json",
-    "start": "concurrently \"npm:server\" \"npm:dev\""
+    "start": "concurrently \"pnpm:server\" \"pnpm:dev\""
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",

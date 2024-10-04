@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "email": "test@gmail.com",
-      "password": "$2a$10$pqDYTuh3GbsE/LI7yR/faug6N9seE7ZFCpno5tOyF/gpDYZaNCUoa",
+      "email": "admin@gmail.com",
+      "password": "admin001",
       "id": 1
     }
   ],
